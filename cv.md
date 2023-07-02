@@ -35,9 +35,9 @@ var uniqueInOrder=function(iterable){
 
 ## __Experience__
 - __My pets  projects:__ 
-  - https://github.com/D4n1el13and37/genrich-restaurant
-  - https://github.com/D4n1el13and37/ChatGPT3
-  - https://github.com/D4n1el13and37/posts-app/tree/main/src
+  - [genrich-restaurant](https://github.com/D4n1el13and37/genrich-restaurant) 
+  - [ChatGPT3](https://github.com/D4n1el13and37/ChatGPT3)
+  - [Posts app](https://github.com/D4n1el13and37/posts-app/tree/main/src "working with cloud server JSONPlaceholder")
 
 ## __Education__ 
 - __University:__ Lobachevsky State University of Nizhny Novgorod, Institute of Economics and Entrepreneurship, Public administration
