@@ -35,8 +35,8 @@ var uniqueInOrder=function(iterable){
 
 ## __Experience__
 - __My pets  projects:__ 
-  - https://genrich-restaurant.vercel.app/ || https://github.com/D4n1el13and37/genrich-restaurant
-  - https://chat-gpt-3-delta.vercel.app/ || https://github.com/D4n1el13and37/ChatGPT3
+  - https://github.com/D4n1el13and37/genrich-restaurant
+  - https://github.com/D4n1el13and37/ChatGPT3
   - https://github.com/D4n1el13and37/posts-app/tree/main/src
 
 ## __Education__ 
