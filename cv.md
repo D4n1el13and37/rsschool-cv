@@ -45,7 +45,6 @@ var uniqueInOrder=function(iterable){
   - [CS50 lectures](https://www.youtube.com/channel/UCcabW7890RKJzL968QWEykA)
   - [FreeCodeCamp](https://www.freecodecamp.org/D4n1el1337)
   - [SoloLearn](https://www.sololearn.com/profile/25089146)
-  - 
 
 ## __English level__
 __B2__ 
