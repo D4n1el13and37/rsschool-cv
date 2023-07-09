@@ -1,0 +1,424 @@
+@font-face {
+  font-family: "Bai Jamjuree";
+  src: url("assets/fonts/BaiJamjuree-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("assets/fonts/Inter-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("assets/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.watch-border {
+  border: 1px solid blue;
+}
+
+.section-title {
+  font-family: "Bai Jamjuree";
+  line-height: 32px;
+  font-size: 24px;
+  letter-spacing: -0.48px;
+  margin-bottom: 40px;
+}
+
+/* header */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  background-image: url(./assets/Grain.png);
+  background-size: cover;
+}
+
+.header-nav {
+  justify-content: flex-end;
+  min-height: 4rem;
+}
+
+.header-list {
+  width: 756px;
+  align-items: center;
+}
+
+.header-item {
+  font-family: "Bai Jamjuree";
+  /* font-size: 15px; */
+}
+
+.header-item a {
+  color: #fff;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 33px;
+}
+
+/* summary */
+#summary {
+  padding: 32px;
+  background-color: #000;
+  height: 698px;
+  position: relative;
+}
+
+#summary::before {
+  content: "";
+  position: absolute;
+  top: 414px;
+  right: 760px;
+  box-shadow: 0 0 650px 650px rgb(255 255 255 / 10%);
+}
+
+#summary::after {
+  content: "";
+  position: absolute;
+  top: 56px;
+  left: 226px;
+  box-shadow: 0 0 350px 350px rgb(255 255 255 / 10%);
+}
+
+.hero {
+  justify-content: space-around;
+  position: relative;
+}
+
+.hero-left_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+
+  bottom: -136px;
+  width: 450px;
+  transform: rotate(270deg);
+}
+
+.hero-left_side h1 {
+  color: #fff;
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  letter-spacing: -0.8px;
+}
+
+.hero-left_side h1::first-line {
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.hero-left_side p {
+  padding: 0;
+  margin: 0;
+  font-family: "Bai Jamjuree";
+  color: #fff;
+  font-size: 24px;
+}
+
+.hero-right_side {
+  position: relative;
+  width: 676px;
+}
+
+.hero-right_side p {
+  margin: 0;
+
+  color: #fff;
+
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.26px;
+
+  margin-bottom: 46px;
+}
+
+.hero-right_side img {
+  position: absolute;
+}
+
+/* contact */
+.contact {
+  padding-left: 164px;
+}
+
+.contact-wrapper {
+  padding: 24px;
+  width: 350px;
+}
+
+.contact-title {
+  font-size: 16px;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.contact-list {
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.26px;
+}
+
+.contact-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.contact-item a {
+  color: #000;
+}
+
+.line-break {
+  display: inline-block;
+  width: 1112px;
+  height: 1px;
+  background-color: #eee;
+  margin-bottom: 96px;
+}
+
+.main {
+  display: flex;
+  gap: 147px;
+  margin-bottom: 50px;
+}
+
+.main-left_side {
+  width: 500px;
+  padding-left: 164px;
+}
+
+/* education */
+.education-list,
+.education-sublist {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.education-sublist {
+  margin-bottom: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.26px;
+  color: #000;
+}
+
+.education {
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.education-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.26px;
+  color: #000;
+}
+
+.education-item {
+  flex-direction: column;
+  margin: 0;
+  gap: 12px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.education-sublist_item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.education-sublist_item a {
+  color: #6140e5;
+}
+
+.education-years {
+  color: #6140e5;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.18px;
+}
+
+.education-description {
+  margin: 0;
+  width: 332px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+}
+
+/* skills */
+/* languages */
+#skills {
+  margin-bottom: 50px;
+}
+.skills-list,
+.languages-list {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skills-item,
+.languages-item {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.26px;
+}
+
+.skills-item a {
+  color: #6140e5;
+}
+
+/* experience */
+.experience {
+  margin-bottom: 70px;
+}
+
+.experience-list {
+  flex-direction: column;
+}
+
+.experience-item {
+  padding: 40px;
+  max-width: 633px;
+  background-color: #fafafa;
+}
+
+.experience-item a {
+    color: #000;
+}
+
+.experience-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.experience-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.26px;
+  margin-bottom: 8px;
+}
+
+.experience-description {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: #525252;
+}
+
+.code-example {
+  padding: 40px;
+  background-color: #fafafa;
+}
+
+.code-example pre {
+  margin: 0;
+}
+
+/* footer */
+.footer {
+  /* display: flex; */
+
+  /* justify-content: center; */
+  /* min-height: 4rem; */
+  border-top: 1px solid #000;
+}
+
+.footer-list {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  height: 4rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-item a {
+  display: flex;
+  color: #000;
+  /* height: 35px; */
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+a:hover {
+  /* color: #6140e5; */
+  /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+  text-decoration: underline;
+}
