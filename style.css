@@ -28,6 +28,7 @@ h2 {
 }
 
 .container {
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -68,8 +69,9 @@ a {
 }
 
 .header-nav {
-  justify-content: flex-end;
+  justify-content: flex-start;
   min-height: 4rem;
+  padding-left: 164px;
 }
 
 .header-list {
@@ -182,7 +184,7 @@ a {
 }
 
 .contact-wrapper {
-  padding: 24px;
+  padding: 24px 0 24px 0;
   width: 350px;
 }
 
@@ -219,7 +221,8 @@ a {
 
 .line-break {
   display: inline-block;
-  width: 1112px;
+  width: 100%;
+  max-width: 1112px;
   height: 1px;
   background-color: #eee;
   margin-bottom: 96px;
@@ -229,11 +232,12 @@ a {
   display: flex;
   gap: 147px;
   margin-bottom: 50px;
+  padding: 24px;
 }
 
 .main-left_side {
   width: 500px;
-  padding-left: 164px;
+  padding-left: 140px;
 }
 
 /* education */
@@ -349,7 +353,7 @@ h3 {
 }
 
 .experience-item a {
-    color: #000;
+  color: #000;
 }
 
 .experience-item:not(:last-child) {
@@ -421,4 +425,95 @@ a:hover {
   /* color: #6140e5; */
   /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1180px) {
+  .container {
+    max-width: 1180px;
+  }
+
+  .header-nav {
+    padding-left: 56px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-left_side {
+    bottom: 0;
+    transform: none;
+    margin-bottom: 40px;
+  }
+
+  .hero-right_side {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .hero-right_side .hero-about {
+    margin-bottom: 40px;
+    align-self: end;
+  }
+
+  .hero-right_side img {
+    position: relative;
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+
+  #summary {
+    height: 100%;
+    padding-bottom: 0;
+  }
+
+  .contact {
+    padding-left: 56px;
+  }
+
+  .line-break {
+    margin-bottom: 40px;
+  }
+
+  .main {
+    padding: 0 32px 0 32px;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .main-left_side {
+    padding-left: 24px;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  .main-right_side {
+    padding-left: 24px;
+  }
+
+  .education-description {
+    font-size: 16px;
+  }
+
+  .footer-list {
+    padding: 32px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  /* .container {
+    max-width: 960px;
+  } */
+
+  .hero-right_side {
+    flex-direction: column;
+  }
+
+  .hero-right_side img {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
 }
