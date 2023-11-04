@@ -99,9 +99,10 @@ img {
 /* summary */
 #summary {
   padding: 32px;
-  background-color: #000;
-  height: 698px;
   position: relative;
+  z-index: 5;
+  height: 698px;
+  background-color: #000;
 }
 
 #summary::before {
@@ -567,4 +568,10 @@ a:hover {
   #summary {
     padding: 12px;
 }
+}
+
+@media screen and (max-width: 500px) {
+  .header-item {
+    font-size: 14px;
+  }
 }
