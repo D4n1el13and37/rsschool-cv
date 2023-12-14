@@ -1,4 +1,12 @@
-@font-face {
+@import url("https://fonts.cdnfonts.com/css/inter");
+@import url('https://fonts.cdnfonts.com/css/futura-condensed-pt');
+
+:root {
+  --font-base: "Inter", sans-serif;
+  --font-title: 'Futura PT', sans-serif;
+}
+
+/* @font-face {
   font-family: "Bai Jamjuree";
   src: url("assets/fonts/BaiJamjuree-Bold.ttf");
   font-weight: 700;
@@ -14,7 +22,7 @@
   font-family: "Inter", sans-serif;
   src: url("assets/fonts/Inter-Regular.ttf");
   font-weight: 400;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -222,6 +230,9 @@ img {
 
 .contact-item a {
   color: #000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .line-break {
