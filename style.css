@@ -1,28 +1,10 @@
 @import url("https://fonts.cdnfonts.com/css/inter");
-@import url('https://fonts.cdnfonts.com/css/futura-condensed-pt');
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&display=swap");
 
 :root {
   --font-base: "Inter", sans-serif;
-  --font-title: 'Futura PT', sans-serif;
+  --font-title: "Bai Jamjuree", sans-serif;
 }
-
-/* @font-face {
-  font-family: "Bai Jamjuree";
-  src: url("assets/fonts/BaiJamjuree-Bold.ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Inter", sans-serif;
-  src: url("assets/fonts/Inter-Medium.ttf");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Inter", sans-serif;
-  src: url("assets/fonts/Inter-Regular.ttf");
-  font-weight: 400;
-} */
 
 * {
   box-sizing: border-box;
@@ -31,8 +13,13 @@
 body,
 h1,
 h2 {
+  font-family: var(--font-base);
   margin: 0;
   padding: 0;
+}
+
+section {
+  margin-bottom: 40px;
 }
 
 .container {
@@ -64,7 +51,7 @@ img {
 }
 
 .section-title {
-  font-family: "Bai Jamjuree";
+  /* font-family: var(--font-title); */
   line-height: 32px;
   font-size: 24px;
   letter-spacing: -0.48px;
@@ -77,7 +64,7 @@ img {
   top: 0;
   background-color: #000;
   background-image: url(./assets/Grain.png);
-  background-size: cover;
+  background-size: contain;
 }
 
 .header-nav {
@@ -89,11 +76,6 @@ img {
 .header-list {
   width: 756px;
   align-items: center;
-}
-
-.header-item {
-  font-family: "Bai Jamjuree";
-  /* font-size: 15px; */
 }
 
 .header-item a {
@@ -138,7 +120,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  font-family: var(--font-title);
   position: relative;
 
   bottom: -136px;
@@ -148,7 +130,7 @@ img {
 
 .hero-left_side h1 {
   color: #fff;
-  font-family: "Bai Jamjuree";
+  font-family: var(--font-title);
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -164,7 +146,7 @@ img {
 .hero-left_side p {
   padding: 0;
   margin: 0;
-  font-family: "Bai Jamjuree";
+  /* font-family: "Bai Jamjuree"; */
   color: #fff;
   font-size: 24px;
 }
@@ -179,7 +161,7 @@ img {
 
   color: #fff;
 
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
   font-size: 18px;
   line-height: 32px;
   letter-spacing: -0.26px;
@@ -210,22 +192,13 @@ img {
 
 .contact-list {
   flex-direction: column;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  gap: 8px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: -0.26px;
-}
-
-.contact-item:not(:last-child) {
-  margin-bottom: 4px;
-}
-
-.contact-item {
-  display: flex;
-  gap: 4px;
-  align-items: center;
 }
 
 .contact-item a {
@@ -257,15 +230,18 @@ img {
 }
 
 /* education */
+.education-list {
+  gap: 20px;
+}
 .education-list,
 .education-sublist {
   flex-direction: column;
-  gap: 8px;
 }
 
 .education-sublist {
-  margin-bottom: 8px;
-  font-family: "Inter", sans-serif;
+  /* margin-bottom: 8px; */
+  gap: 8px;
+  padding-left: 20px;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -280,7 +256,6 @@ img {
 }
 
 .education-subtitle {
-  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -292,7 +267,7 @@ img {
 .education-item {
   flex-direction: column;
   margin: 0;
-  gap: 12px;
+  gap: 8px;
 }
 
 h3 {
@@ -309,7 +284,6 @@ h3 {
 
 .education-years {
   color: #6140e5;
-  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -320,7 +294,6 @@ h3 {
 .education-description {
   margin: 0;
   width: 332px;
-  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -330,9 +303,10 @@ h3 {
 
 /* skills */
 /* languages */
-#skills {
+/* #skills {
   margin-bottom: 50px;
-}
+} */
+
 .skills-list,
 .languages-list {
   flex-direction: column;
@@ -341,7 +315,6 @@ h3 {
 
 .skills-item,
 .languages-item {
-  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -354,9 +327,9 @@ h3 {
 }
 
 /* experience */
-.experience {
+/* .experience {
   margin-bottom: 70px;
-}
+} */
 
 .experience-list {
   flex-direction: column;
@@ -377,7 +350,6 @@ h3 {
 }
 
 .experience-subtitle {
-  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -388,7 +360,6 @@ h3 {
 
 .experience-description {
   margin: 0;
-  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -416,16 +387,15 @@ h3 {
 }
 
 .footer-list {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.09px;
   height: 4rem;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 .footer-item a {
@@ -534,6 +504,23 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .section-title {
+    margin-bottom: 20px;
+  }
+  .line-break {
+    margin-bottom: 20px;
+  }
+  section {
+    margin-bottom: 40px;
+  }
+  .contact {
+    margin-bottom: 20px;
+  }
+  .main-left_side {
+    margin-bottom: 0;
+  }
+}
 @media screen and (max-width: 700px) {
   .contact {
     padding-left: 32px;
@@ -578,7 +565,7 @@ a:hover {
   }
   #summary {
     padding: 12px;
-}
+  }
 }
 
 @media screen and (max-width: 500px) {
