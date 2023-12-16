@@ -70,6 +70,7 @@ img {
   background-color: #000;
   background-image: url(./assets/Grain.png);
   background-size: contain;
+  z-index: 1;
 }
 
 .header-nav {
