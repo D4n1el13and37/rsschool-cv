@@ -23,11 +23,11 @@ h2 {
   padding: 0;
 }
 
-section {
-  margin-bottom: 40px;
-}
-
 .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -103,6 +103,9 @@ img {
 #summary {
   padding: 32px;
   position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 100vw;
   z-index: 5;
   height: 698px;
   background-color: #000;
@@ -234,6 +237,10 @@ img {
   gap: 147px;
   margin-bottom: 50px;
   padding: 24px;
+}
+
+.main section {
+  margin-bottom: 40px;
 }
 
 .main-left_side {
@@ -391,10 +398,6 @@ h3 {
 
 /* footer */
 .footer {
-  /* display: flex; */
-
-  /* justify-content: center; */
-  /* min-height: 4rem; */
   border-top: 1px solid #000;
 }
 
@@ -420,7 +423,6 @@ h3 {
 }
 
 a:hover {
-  /* text-decoration: underline; */
   background-size: 100% 2px;
 }
 
@@ -471,10 +473,6 @@ a:hover {
     padding-left: 56px;
   }
 
-  /* .line-break {
-    margin-bottom: 40px;
-  } */
-
   .main {
     padding: 0 32px 0 32px;
     flex-direction: column;
@@ -519,10 +517,6 @@ a:hover {
   .section-title {
     margin-bottom: 20px;
   }
-  /* .line-break {
-    margin-bottom: 20px;
-  } */
-
   section {
     margin-bottom: 40px;
   }
